@@ -2,13 +2,13 @@ public class HybridCar extends Car{
     private int batteryLife, MPG;
     private String chargerType;
 
-    public HybridCar(String VIN, double wholesaleCost, double retialPrice, int modelYear, String make, String model, String color, int batteryLife, int MPG, String chargerType){
-        super(VIN, wholesaleCost, retialPrice, modelYear, make, model, color);
+    public HybridCar(String VIN, double wholesaleCost, double retialPrice, int modelYear, String make, String model, String color, int batteryLife, int MPG, String chargerType, VehicleClassification vehicleClass){
+        super(VIN, wholesaleCost, retialPrice, modelYear, make, model, color, vehicleClass);
         this.batteryLife = batteryLife;
         this.MPG = MPG;
         this.chargerType = chargerType;
     }
-    
+
 //getters
         public int getBatteryLife(){
             return this.batteryLife;
