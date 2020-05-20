@@ -1,0 +1,35 @@
+Goals for today:
+review and cement the basic OOP principles
+become a little more comfortable with "big" applications
+our thought process when we nee dto start designing an applications
+
+
+Car dealership
+   - which to design first? the publice interface or the inner details
+        -top down or bottom up design concept
+        depends on a lot fo factore and most -teams will use both when delievering software
+
+    - Top Down: identify top level objects first then find teh objects that represent smaller portions of the system.
+        - We continually refine those definistion untill the system is complete 
+        - In our dealership application whti ma look like thisdesinging objects in the order
+            -dealership
+            -department
+            -staff
+            -vehicles
+    - Bottom up: the lowest level of objects would be designed first an dthen those obejcest would be combined into bigger moduels untiel the overal system is complete.
+        - in the dealership this would be designed in this order:
+            -vehicles
+            -department
+            -dealership
+            -staff
+
+Starting with vehicles
+    - object hierarachy
+        - Gen-Spec (Generalized-specialized) / "is-a relationship
+        - find common abstractionsand model those in our base class then having specialized classes derive those from the base class.
+        
+
+New things we learned today
+    1. Enumerations
+    2. instanceof Keyword
+    3. How to work with a multifly Jave Program in  VS Code.
