@@ -34,18 +34,22 @@ public class LightTruck extends Vehicle {
     public void setGrossWieght(long weight){
         this.grossCombineWeight = weight;
     }
+    public void setGrossWieght(){
+        this.grossCombineWeight = this.truckWeight + this.towingCapacity;
+    }
     public void setIs4wd(boolean is4wd){
         this.is4wd = is4wd;
     }
 
     @Override
     public String toString(){
-        String str = super.toString();
         // Get the string output from our 'default'    superclass method
         // Example: 2018 Kia Sorrento
         // and store that in a variable for us to use 
+        String str = super.toString();
+        // If 4WD signify that in return string
         if(is4wd){
-            str += ", (4 WD)";
+            str += ", (4 WD)"; // appends string ot end of our str variable
         }
         return str;
         
