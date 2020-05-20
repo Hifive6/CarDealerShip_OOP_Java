@@ -4,8 +4,9 @@ public class Vehicle{
     private String VIN, make, model, color;
     private double wholesaleCost, retailPrice;
     private int modelYear;
+    private VehicleClassification vehicleClass;
 
-    public Vehicle(String VIN, double wholesaleCost, double retailPrice, int modelYear, String make, String model, String color){
+    public Vehicle(String VIN, double wholesaleCost, double retailPrice, int modelYear, String make, String model, String color, VehicleClassification vehicleClass){
         this.VIN = VIN;
         this.wholesaleCost = wholesaleCost;
         this.retailPrice = retailPrice;
@@ -13,6 +14,7 @@ public class Vehicle{
         this.make = make;
         this.model = model;
         this.color = color;
+        this.vehicleClass = vehicleClass;
     }
 
     //getters
@@ -36,6 +38,9 @@ public class Vehicle{
     }
     public String getColor(){
         return color;
+    }
+    public VehicleClassification getVehicleClass(){
+        return vehicleClass;
     }
 
     //setters
@@ -61,6 +66,9 @@ public class Vehicle{
         this.color = color;
     }
 
+    public void setVehicleClass(VehicleClassification vehicleClass) {
+        this.vehicleClass = vehicleClass;
+    }
     @Override // Annotation telling us an dcomplier that we are overridding prviously defined behavior
     public String toString(){
         return this.getModelYear() + " " + this.getMake() + " " + this.getModel();
@@ -73,3 +81,4 @@ public class Vehicle{
 
 
 }
+
