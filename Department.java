@@ -16,7 +16,7 @@ public abstract class Department {
     }
 
 
-    public void printIsOpen(List<Department> depts, LocalDateTime today){
+    public static void printIsOpen(List<Department> depts, LocalDateTime today){
         //Cycle throught each department in provided list
         for(Department d : depts){
             // Print out name of Dept and return if that Dept is open today
