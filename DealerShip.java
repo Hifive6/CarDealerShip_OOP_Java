@@ -21,11 +21,12 @@ public class DealerShip {
 
         // System.out.println("Number of months to lease " + lease.getLeaseTerm());
 
-        LightTruck lt = new LightTruck("234Jfke123", 48000.00, 62000.00, 2019, "Chevy", "Silverardo", "Silver", 100000L, 900000L, true, VehicleClassification.NEW);
+        LightTruck lt = new LightTruck("234Jfke123", 48000.00, 62000.00, 2019, "Chevy", "Silverardo", "Silver", 100000L, 900000L, true, VehicleClassification.OFF_LEASE);
 
         if(lt.getIs4wd()){
             int gears = lt.xferCase.getNumGears();
             System.out.println("Number of Gears: " + gears);
         }
+        lt.printVehicleType();
     }
 }
