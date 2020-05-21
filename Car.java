@@ -1,4 +1,5 @@
-public class Car extends Vehicle {
+//Convention dictates that  "implements" comes after "extends" if its present
+public class Car extends Vehicle implements Leaseable{
     //Simple Car Constructor inheriting all of the methds and properties of Vehicle
     public Car(String VIN, double wholesaleCost, double retialPrice, int modelYear, String make, String model, String color, VehicleClassification vehicleClass){
         super(VIN, wholesaleCost, retialPrice, modelYear, make, model, color, vehicleClass);
@@ -10,5 +11,20 @@ public class Car extends Vehicle {
         // or a bette way to write it is 
         return super.getTargetMargin() - 1000;
         // Use the getTargetMargin method as its defined in our superclass (Vehicle)
+    }
+
+    @Override
+    public boolean isLeaseable(){
+        return true;
+    }
+
+    @Override
+    public int getLeaseTerm(){
+        return 24;
+    }
+    
+    @Override
+    public int getMaxMilesPerYear(){
+        return 15_000;
     }
 }
