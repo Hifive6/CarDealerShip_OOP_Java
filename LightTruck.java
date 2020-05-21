@@ -8,6 +8,11 @@ public class LightTruck extends Vehicle {
         this.truckWeight = truckWieght;
         this.is4wd = is4wd;
         this.grossCombineWeight = this.towingCapacity + this.truckWeight;
+        
+        if(this.is4wd == true){
+            // Create new TransferCase Oject if LightTruck is 4Wd and store object in variable xferCase
+            this.xferCase = new TransferCase();
+        }
     }
 
     //getters
@@ -58,5 +63,21 @@ public class LightTruck extends Vehicle {
         return str;
         
     }
+    //Class within a Class
+    public class TransferCase {
+        private int numGears;
+        //constuctors for this class
+        public TransferCase(){
+            this.numGears = 4;
+        }
+        public TransferCase(int gears){
+            this.numGears = gears;
+        }
+        //Getter
+        public int getNumGears(){
+            return this.numGears;
+        }
+    }
 
+    public TransferCase xferCase;
 }

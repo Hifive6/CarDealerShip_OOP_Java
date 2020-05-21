@@ -17,8 +17,15 @@ public class DealerShip {
 
         // Department.printIsOpen(depts, LocalDateTime.now());
 
-        Leaseable lease = new Car("232342234FDE", 330000.00, 420000.00, 2019, "Chevy", "Impala", "White", VehicleClassification.NEW);
+        // Leaseable lease = new Car("232342234FDE", 330000.00, 420000.00, 2019, "Chevy", "Impala", "White", VehicleClassification.NEW);
 
-        System.out.println("Number of months to lease " + lease.getLeaseTerm());
+        // System.out.println("Number of months to lease " + lease.getLeaseTerm());
+
+        LightTruck lt = new LightTruck("234Jfke123", 48000.00, 62000.00, 2019, "Chevy", "Silverardo", "Silver", 100000L, 900000L, true, VehicleClassification.NEW);
+
+        if(lt.getIs4wd()){
+            int gears = lt.xferCase.getNumGears();
+            System.out.println("Number of Gears: " + gears);
+        }
     }
 }
