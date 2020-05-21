@@ -15,6 +15,6 @@ public class DealerShip {
         depts.add(fd);
         depts.add(sales);
 
-        Department.printIsOpen(depts, LocalDateTime.now();
+        Department.printIsOpen(depts, LocalDateTime.now());
     }
 }
