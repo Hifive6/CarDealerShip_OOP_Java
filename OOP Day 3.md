@@ -33,3 +33,22 @@
 * using a Factory insulates the consumer rom the actual class implementation
 * Why is this important? Why use a factory instead of relying on the _new_ keyword?
     * **Abstraction** and **Insulation**
+
+---
+
+### When to use Abstract classes, generic classes, and interfaces
+
+#### Abstract Classes
+* Do you need both abstract and non-abstract methods?
+* Are you okay with a class only being able to implement only of you?
+* Do you expressly need to add new functionality or do need some other stuff too?
+* A blueprint to use for something else 
+
+#### Interface
+* Do you only need non-abstract method?
+* Are you easily nameds as an adjective (has -ible or -able at the end)
+* Can you be paired with other interfaces and work together to add more functionality?
+* Added functionality to soemthing already existing
+
+#### Generic Class
+* Do you need to work with Mulitple data types or object types?
