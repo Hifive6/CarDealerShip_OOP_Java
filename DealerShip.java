@@ -9,13 +9,18 @@ public class DealerShip {
         // FinanceDepartment fd = new FinanceDepartment();
         // SalesDepartment sales = new SalesDepartment();
 
-        // //Add Department to a list
-        // List<Department> depts = new ArrayList<>();
-        // depts.add(sd);
-        // depts.add(fd);
-        // depts.add(sales);
+        //Hava our Factory create new departments for us
+        Department sd = DepartmentFactory.createDepartment(DepartmentNames.SERVICE);
+        Department fd = DepartmentFactory.createDepartment(DepartmentNames.FINANCE);
+        Department sales = DepartmentFactory.createDepartment(DepartmentNames.SALES);
+        
+        //Add Department to a list
+        List<Department> depts = new ArrayList<>();
+        depts.add(sd);
+        depts.add(fd);
+        depts.add(sales);
 
-        // Department.printIsOpen(depts, LocalDateTime.now());
+        Department.printIsOpen(depts, LocalDateTime.now());
 
 
 

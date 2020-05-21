@@ -31,3 +31,5 @@
 * a method for creating objects without exposing the logice needed for creation
 * Super common patter in OOP
 * using a Factory insulates the consumer rom the actual class implementation
+* Why is this important? Why use a factory instead of relying on the _new_ keyword?
+    * **Abstraction** and **Insulation**
